@@ -98,7 +98,7 @@ So that `specific-interceptor` could be something required for just this one
 event handler, and it can be combined with the standard ones.
 
 Wait on! "I see a problem", you say.  `standard-interceptors` is a `vector`, and it
-is within another `vector` along side `specific-interceptor` - so that's
+is within another `vector` alongside `specific-interceptor` - so that's
 nested vectors of interceptors!  
 
 No problem, re-frame uses `flatten` to take out all the nesting - the 
@@ -151,7 +151,7 @@ an example using Prismatic Schema
         :f [s/Num]}]})
 ```
 
-And a function which will check a db value against that schema:
+And a function that will check a db value against that schema:
 ```clj
 (defn valid-schema?
   "validate the given db, writing any problems to console.error"
@@ -225,3 +225,4 @@ and then:
         [standard-interceptors-fx interceptors]
         handler-fn)))
 ```
+![image](https://user-images.githubusercontent.com/104916426/175249436-a6e27f70-17b9-4c96-b6a8-290ee909e50c.png)
