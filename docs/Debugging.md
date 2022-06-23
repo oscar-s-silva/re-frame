@@ -1,7 +1,7 @@
-We recomend you use:
+We recommend you use:
 
- - [re-frame-10x](https://github.com/day8/re-frame-10x) or [refrisk](https://github.com/flexsurfer/re-frisk)
-- with [clj-devtools](https://github.com/binaryage/cljs-devtools)
+- [re-frame-10x](https://github.com/day8/re-frame-10x) or [refrisk](https://github.com/flexsurfer/re-frisk)
+- with [cljs-devtools](https://github.com/binaryage/cljs-devtools)
 
 
 
@@ -98,7 +98,7 @@ So that `specific-interceptor` could be something required for just this one
 event handler, and it can be combined with the standard ones.
 
 Wait on! "I see a problem", you say.  `standard-interceptors` is a `vector`, and it
-is within another `vector` along side `specific-interceptor` - so that's
+is within another `vector` alongside `specific-interceptor` - so that's
 nested vectors of interceptors!  
 
 No problem, re-frame uses `flatten` to take out all the nesting - the 
@@ -151,7 +151,7 @@ an example using Prismatic Schema
         :f [s/Num]}]})
 ```
 
-And a function which will check a db value against that schema:
+And a function that will check a db value against that schema:
 ```clj
 (defn valid-schema?
   "validate the given db, writing any problems to console.error"
@@ -225,3 +225,4 @@ and then:
         [standard-interceptors-fx interceptors]
         handler-fn)))
 ```
+![image](https://user-images.githubusercontent.com/104916426/175249667-3cc30bc2-f204-40a5-90c4-1d1ade2c83a5.png)
