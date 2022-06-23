@@ -1,7 +1,7 @@
-We recomend you use:
+We recommend you use:
 
- - [re-frame-10x](https://github.com/day8/re-frame-10x) or [refrisk](https://github.com/flexsurfer/re-frisk)
-- with [clj-devtools](https://github.com/binaryage/cljs-devtools)
+- [re-frame-10x](https://github.com/day8/re-frame-10x) or [refrisk](https://github.com/flexsurfer/re-frisk)
+- with [cljs-devtools](https://github.com/binaryage/cljs-devtools)
 
 
 
@@ -225,4 +225,3 @@ and then:
         [standard-interceptors-fx interceptors]
         handler-fn)))
 ```
-![image](https://user-images.githubusercontent.com/104916426/175249436-a6e27f70-17b9-4c96-b6a8-290ee909e50c.png)
